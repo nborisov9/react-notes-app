@@ -1,0 +1,30 @@
+.alert {
+  background: #fff1c8;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cccc;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 20px 0px 0px 0px;
+}
+
+.alert-text {
+  display: flex;
+  margin: 0px 0px 0px 20px;
+  span {
+    margin: 0px 0px 0px 7px;
+  }
+}
+
+.alert-success {
+  background: rgba(153, 253, 153, 0.521);
+}
+.alert-warning {
+  background: #fff1c8;
+}
+
+.alert-danger {
+  background: #ffb0b0dc;
+}

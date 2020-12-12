@@ -1,0 +1,74 @@
+.navbar {
+  i {
+    display: none;
+    @media (max-width: 500px) {
+      position: relative;
+      z-index: 50;
+      display: block;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+  padding: 0px 0px 0px 40px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background: #006fff;
+  width: 100%;
+  @media (max-width: 500px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 0px 0px 10px;
+  }
+  &__brand {
+    font-family: 'Kanit';
+    font-size: 30px;
+    color: #fff;
+    white-space: nowrap;
+    @media (max-width: 500px) {
+      padding: 0px 10px 0px 0px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    @media (max-width: 500px) {
+      display: none;
+    }
+    &.nav-menu-burger {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      line-height: 30px;
+      align-items: center;
+      padding: 100px 0px 0px 0px;
+      background: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+.nav__item {
+  margin: 0px 0px 0px 12px;
+  font-size: 19px;
+  &:first-child {
+    margin: 0px 0px 0px 30px;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    &.active {
+      color: #fff;
+    }
+  }
+  @media (max-width: 500px) {
+    margin: 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
+}

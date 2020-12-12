@@ -1,0 +1,29 @@
+.btn-close {
+  border: 0;
+  font-size: 30px;
+  background: transparent;
+  &:hover {
+    color: rgba(255, 75, 75, 0.788);
+  }
+}
+
+.btn {
+  padding: 0px 15px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    transform: translate(0px, 0px);
+  }
+  &:active {
+    transform: translate(0px, 3px);
+  }
+}
+.btn-danger {
+  border: 2px solid rgba(255, 137, 137, 0.788);
+  color: rgba(255, 137, 137, 0.788);
+  &:hover {
+    background: rgba(255, 75, 75, 0.788);
+    color: #fff;
+  }
+}
